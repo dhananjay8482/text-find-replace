@@ -1,0 +1,34 @@
+.find-replace-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  input, button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .case-sensitive-toggle {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .case-sensitive-toggle input {
+    margin-right: 4px;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+  }
+  
+  

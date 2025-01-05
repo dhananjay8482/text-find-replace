@@ -1,0 +1,14 @@
+<div class="find-replace-container">
+    <textarea [(ngModel)]="text" placeholder="Enter text here"></textarea>
+    <input [(ngModel)]="findText" placeholder="Find" />
+    <input [(ngModel)]="replaceText" placeholder="Replace" />
+    <div class="case-sensitive-toggle">
+      <label>
+        <input type="checkbox" [(ngModel)]="caseSensitive" />
+        Case Sensitive
+      </label>
+    </div>
+    <!-- Disable the button if findText is empty -->
+  <button (click)="findAndReplace()" [disabled]="!findText.trim()">Find & Replace</button>
+  </div>
+  

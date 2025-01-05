@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'text-find-replace';
+  history: { originalText: string; replacedText: string }[] = [];
+
+  addHistory(originalText: string, replacedText: string): void {
+    this.history.push({ originalText, replacedText });
+  }
 }

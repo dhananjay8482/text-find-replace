@@ -1,0 +1,18 @@
+<div class="history-sidebar">
+    <h3>History</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Original Text</th>
+          <th>Replaced Text</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entry of history">
+          <td>{{ entry.originalText }}</td>
+          <td>{{ entry.replacedText }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

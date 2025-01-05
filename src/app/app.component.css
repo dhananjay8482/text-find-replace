@@ -1,0 +1,15 @@
+.app-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    height: 95vh;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
